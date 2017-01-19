@@ -53,8 +53,13 @@ function playGame() {
         console.log("win");
         return 1;
     }
-    else if (playerChoice == 0 && computerChoice == 3) {
-        // Rock beats Lizard - a win!
+    else if (playerChoice == 2 && computerChoice == 3) {
+        // Sicssors beats Lizard - a win!
+        console.log("win");
+        return 1;
+    }
+    else if (playerChoice == 4 && computerChoice == 0) {
+        // Spock beats Rock - a win!
         console.log("win");
         return 1;
     }
@@ -65,7 +70,7 @@ function playGame() {
     }
 }
 
-function displayScoreBoard(winsId, lossesId, tiesId) {
+function displayScoreBoard(winsId, losesId, tiesId) {
     document.getElementById(winsId).innerHTML = score[0];
     document.getElementById(lossesId).innerHTML = score[2];
     document.getElementById(tiesId).innerHTML = score[1];
