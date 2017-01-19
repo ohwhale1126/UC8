@@ -72,7 +72,7 @@ function playGame() {
 
 function displayScoreBoard(winsId, losesId, tiesId) {
     document.getElementById(winsId).innerHTML = score[0];
-    document.getElementById(lossesId).innerHTML = score[2];
+    document.getElementById(losesId).innerHTML = score[2];
     document.getElementById(tiesId).innerHTML = score[1];
 }
 
@@ -98,7 +98,7 @@ function displayGameResult(resultId) {
     else if (result == -1) {
         updateScore(2);
         // Display that it was a loss
-        document.getElementById(resultId).innerHTML = message + "YOU LOOSE! ";
+        document.getElementById(resultId).innerHTML = message + "YOU LOSE! ";
         document.getElementById(resultId).className = "alert alert-danger";
     }
     else {
