@@ -1,59 +1,61 @@
 <!DOCTYPE html>
-    <html lang="en">
+<html lang="en">
 
-    <head>
-        <title>Rochambeau2</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet " href="rochambeau.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="rochambeau.js"></script>
-    </head>
+<head>
+    <title>Rochambeau2</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet " href="rochambeau.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="rochambeau.js"></script>
+</head>
 
-    <body>
-        <p/>
-        <p/>
-        <div class="container">
-            <h1>Rock, Paper, Scissors, Lizard, Spock Game</h1>
-            <p>Let's Play Rock, Paper, Scissors, Lizard, Spock! Press your choice and then press PLAY!.</p>
-            <div class="btn-group" role="group" aria-label="...">
-                <button type="button" class="btn btn-default" onclick="storePlayerChoice(0)">Rock</button>
-                <button type="button" class="btn btn-default" onclick="storePlayerChoice(1)">Paper</button>
-                <button type="button" class="btn btn-default" onclick="storePlayerChoice(2)">Scissors</button>
-                <button type="button" class="btn btn-default" onclick="storePlayerChoice(3)">Lizard</button>
-                <button type="button" class="btn btn-default" onclick="storePlayerChoice(4)">Spock</button>
-            </div>
-            <p></p>
-            <input type="button" onclick="displayGameResult('result'), displayScoreBoard('wins', 'loses', 'ties')" value="Play" class="btn btn-primary">
-            <p></p>
-            <div id="result"></div>
-            <div id="scoreboard">
-                <table class="table">
-                    <tr>
-                        <td>Wins:</td>
-                        <td>Loses:</td>
-                        <td>Ties:</td>
-                        <td>Matches:</td>
-                    </tr>
-                    <tr>
-                        <td id="wins">0</td>
-                        <td id="loses">0</td>
-                        <td id="ties">0</td>
-                        <td id="matches">0</td>
-                    </tr>
-                </table>
-                <table class="table">
-                    <tr>
-                        <td>My Matches:</td>
-                        <td>Computer's Matches:</td>
-                    </tr>
-                    <tr>
-                        <td id="mymatch">0</td>
-                        <td id="compmatch">0</td>
-                    </tr>
-                </table>
+<body>
+    <p/>
+    <p/>
+    <div class="container">
+        <h1>Rock, Paper, Scissors, Lizard, Spock Game</h1>
+        <p>Let's Play Rock, Paper, Scissors, Lizard, Spock! Press your choice and then press PLAY!.</p>
+        <div class="btn-group" role="group" aria-label="...">
+            <button type="button" class="btn btn-default" onclick="storePlayerChoice(0)">Rock</button>
+            <button type="button" class="btn btn-default" onclick="storePlayerChoice(1)">Paper</button>
+            <button type="button" class="btn btn-default" onclick="storePlayerChoice(2)">Scissors</button>
+            <button type="button" class="btn btn-default" onclick="storePlayerChoice(3)">Lizard</button>
+            <button type="button" class="btn btn-default" onclick="storePlayerChoice(4)">Spock</button>
         </div>
-    </body>
-    </html>
+        <p></p>
+        <input type="button" onclick="displayGameResult('result'), displayScoreBoard('wins', 'loses', 'ties')" value="Play" class="btn btn-primary">
+        <p></p>
+        <div id="result"></div>
+        <div id="scoreboard">
+            <table class="table">
+                <tr>
+                    <td>Wins:</td>
+                    <td>Loses:</td>
+                    <td>Ties:</td>
+                    <td>Matches:</td>
+                </tr>
+                <tr>
+                    <td id="wins">0</td>
+                    <td id="loses">0</td>
+                    <td id="ties">0</td>
+                    <td id="matches">0</td>
+                </tr>
+            </table>
+            <table class="table">
+                <tr>
+                    <td>My Matches:</td>
+                    <td>Computer's Matches:</td>
+                </tr>
+                <tr>
+                    <td id="mymatch">0</td>
+                    <td id="compmatch">0</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
