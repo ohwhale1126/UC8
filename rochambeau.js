@@ -112,26 +112,26 @@ function displayGameResult(resultId) {
     }
 }
 
-function displayMatchesScoreBoard(matchesId, mymatchId, compmatchId) {
-    document.getElementById(matchesId).innerHTML = match[0];
-    document.getElementById(mymatchId).innerHTML = match[1];
-    document.getElementById(compmatchId).innerHTML = match[2];
-}
+//function displayMatchesScoreBoard(matchesId, mymatchId, compmatchId) {
+   // document.getElementById(matchesId).innerHTML = match[0];
+   // document.getElementById(mymatchId).innerHTML = match[1];
+    //document.getElementById(compmatchId).innerHTML = match[2];
+//}
 
-function updateScore(val) {
-    ++match[val];
-    console.log("The match is now " + match);
-}
+//function updateScore(val) {
+    //++match[val];
+    //console.log("The match is now " + match);
+//}
 
-function displayMatchesResult(resultId) {
+//function displayMatchesResult(resultId) {
 
     // Display how many matches both players had
-    if ()
+    //if ()
     // Display how many matches the player won
-    else if ()
+   // else if ()
     // Display how many matches the computer won
-    else()
-}
+    //else()
+//}
 
 function storePlayerChoice(choice) {
     playerChoice = choice;
