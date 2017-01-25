@@ -1,11 +1,9 @@
 // This is the varaible that stores the score.
 // score[0] = wins, score[1] = ties, score[2] = losses
 var score = [0, 0, 0];
-var previous_score = [0, 0, 0];
 // The variables store the current player's and computer's choices
 // 0 = Rock, 1 = Paper, 2 = Scissors, 3 = Lizard, 4 = Spock
-var matchcount = 1
-var matches = [0, 0, 0];
+var matches = [0, 0];
 var playerChoice;
 var computerChoice;
 
@@ -73,15 +71,34 @@ function playGame() {
     }
 }
 
-function displayScoreBoard(winsId, losesId, tiesId) {
+function displayScoreBoard(winsId, losesId, tiesId, matchwinsId, matchlosesId) {
     document.getElementById(winsId).innerHTML = score[0];
     document.getElementById(losesId).innerHTML = score[2];
     document.getElementById(tiesId).innerHTML = score[1];
+    document.getElementById(matchwinsId).innerHTML = matches[0];
+    document.getElementById(matchlosesId).innerHTML = matches[1];
 }
 
 function updateScore(val) {
     ++score[val];
     console.log("The score is now " + score);
+}
+
+function updateMatch(val) {
+    ++matches[val];
+}
+
+function updateMatchesresult(val) {
+    // update matches to wins
+    if (score[0] == 2) {
+        ++matches[0]
+        score = [0, 0, 0]
+    }
+    // update matches to loses
+    if (score[2] == 2) {
+        ++matches[1]
+        score = [0, 0, 0]
+    }
 }
 
 function displayGameResult(resultId) {
@@ -111,28 +128,14 @@ function displayGameResult(resultId) {
         document.getElementById(resultId).className = "alert alert-info";
     }
 }
-
-//function displayMatchesScoreBoard(matchesId, mymatchId, compmatchId) {
-   // document.getElementById(matchesId).innerHTML = match[0];
-   // document.getElementById(mymatchId).innerHTML = match[1];
-    //document.getElementById(compmatchId).innerHTML = match[2];
-//}
-
-//function updateScore(val) {
-    //++match[val];
-    //console.log("The match is now " + match);
-//}
-
 //function displayMatchesResult(resultId) {
-
-    // Display how many matches both players had
-    //if ()
-    // Display how many matches the player won
-   // else if ()
-    // Display how many matches the computer won
-    //else()
+// Display how many matches both players had
+//if ()
+// Display how many matches the player won
+// else if ()
+// Display how many matches the computer won
+//else()
 //}
-
 function storePlayerChoice(choice) {
     playerChoice = choice;
     console.log("My choice = " + playerChoice);

@@ -27,7 +27,7 @@
             <button type="button" class="btn btn-danger" onclick="storePlayerChoice(4)">Spock</button>
         </div>
         <p></p>
-        <input type="button" onclick="displayGameResult('result'), displayScoreBoard('wins', 'loses', 'ties')" value="Play" class="btn btn-primary">
+        <input type="button" onclick="displayGameResult('result'), displayScoreBoard('wins', 'loses', 'ties', 'matchwins', 'matchloses')" value="Play" class="btn btn-primary">
         <p></p>
         <div id="result"></div>
         <div id="scoreboard">
@@ -36,13 +36,11 @@
                     <td>Wins:</td>
                     <td>Loses:</td>
                     <td>Ties:</td>
-                    <td>Matches:</td>
                 </tr>
                 <tr>
                     <td id="wins">0</td>
                     <td id="loses">0</td>
                     <td id="ties">0</td>
-                    <td id="matches">0</td>
                 </tr>
             </table>
             <table class="table">
@@ -51,8 +49,8 @@
                     <td>Computer's Matches:</td>
                 </tr>
                 <tr>
-                    <td id="mymatch">0</td>
-                    <td id="compmatch">0</td>
+                    <td id="matchwins">0</td>
+                    <td id="matchloses">0</td>
                 </tr>
             </table>
         </div>
