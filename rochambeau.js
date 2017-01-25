@@ -82,13 +82,10 @@ function displayScoreBoard(winsId, losesId, tiesId, matchwinsId, matchlosesId) {
 function updateScore(val) {
     ++score[val];
     console.log("The score is now " + score);
+    updateMatches();
 }
 
-function updateMatch(val) {
-    ++matches[val];
-}
-
-function updateMatchesresult(val) {
+function updateMatches(val) {
     // update matches to wins
     if (score[0] == 2) {
         ++matches[0]
